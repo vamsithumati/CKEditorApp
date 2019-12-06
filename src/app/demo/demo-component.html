@@ -1,0 +1,24 @@
+<script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<div id="CKEditorInputTag">
+        <form (ngSubmit)="onSubmit()" #demoForm="ngForm">
+            <h3>User profile form</h3>
+
+            <div>
+                <label for="name">Name</label>
+                <input [(ngModel)]="model.name" type="text" name="name" id="name">
+            </div>
+
+            <div>
+                <label for="surname">Surname</label>
+                <input [(ngModel)]="model.surname" type="text" name="surname" id="surname">
+            </div>
+
+            <label for="description">Description</label>
+        </form>
+    </div>
+    <p><button type="submit" (click)="RefreshData()">Refresh</button></p>
+    <p><button type="button" id = "CKEditorButton">OpenEditor</button></p>
+
+
+    
